@@ -1,0 +1,13 @@
+import numpy as np 
+import statistics as stats 
+data = [15, 21, 29, 21, 15, 24, 32, 21, 15, 30] 
+mean_value = np.mean(data) 
+print("Mean:", mean_value) 
+median_value = np.median(data) 
+print("Median:", median_value) 
+mode_value = stats.mode(data) 
+print("Mode:", mode_value) 
+variance_value = np.var(data, ddof=0)   
+print("Variance:", variance_value) 
+std_dev_value = np.std(data, ddof=0)  
+print("Standard Deviation:", std_dev_value) 
